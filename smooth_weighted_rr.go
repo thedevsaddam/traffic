@@ -70,7 +70,7 @@ func (w *SmoothWeightedRoundRobin) Next() interface{} {
 	}
 
 	if w.peersCount == 1 {
-		return w.peers[0]
+		return w.peers[0].Name
 	}
 
 	total := 0
